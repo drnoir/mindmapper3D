@@ -103,6 +103,17 @@ h2{
   display: block; margin: 0 auto;
 }
 
+.photo{
+  background-color: #0D6560;
+  width: 364.49px;
+  height: 90.32px;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  color:white;
+  font-size:2em;
+  display: block; margin: 0 auto;
+}
+
 .app-block{
   display: flex;
   flex-direction: row;
@@ -149,8 +160,7 @@ li:hover {
 
 .journal{
   position: absolute;
-  margin:2em;
-  width:50%;
+  width:90%;
 }
 
 .cal{

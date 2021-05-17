@@ -128,10 +128,10 @@ function MindMap() {
         <div className={"MindMapContainer"}>
 
             <div className='app-banner-row'>
+
                 <div className='app-banner-column'>
                     <div className='app-banner-column-left'>
                         <h2>Enter your thoughts here</h2>
-                        <h5>Journal Date: {currentDate} </h5>
                         <Editor
                             className="journal"
                             tools={[
