@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body{
   background: #f2f2f2;
 }
+
 h1{
   font-family: 'Bebas Neue', cursive;
   font-size:3em;
@@ -12,26 +14,6 @@ h1{
 h2{
   font-family: 'Bebas Neue', cursive;
   color:#0D6560;
-}
-
-.App {
-  /*text-align: center;*/
-}
-
-.loading {
-  position: absolute;
-  top:25%;
-  left:50%;
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s; /* Firefox < 16 */
-  -ms-animation: fadein 2s; /* Internet Explorer */
-  -o-animation: fadein 2s; /* Opera < 12.1 */
-  animation: fadein 2s;
-}
-
-@keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
 }
 
 .app-header{
@@ -82,7 +64,6 @@ h2{
   text-align: center;
 }
 
-
 .app-banner{
   width: 100%;
   height: 659px;
@@ -92,7 +73,6 @@ h2{
 
 
 .app-banner img{
-  /*height: auto;*/
   width:100%;
 }
 
@@ -150,6 +130,7 @@ h2{
  text-decoration: none;
   color:white;
 }
+
 .app-banner-button a:hover {
   text-decoration: underline;
 }
@@ -213,25 +194,11 @@ li:hover {
   position: absolute;
 }
 
-.cal{
-  margin:2em;
-}
-
-.wordcloud{
-  background:black;
-  border: solid white 4px;
-  margin:2em;
-}
-
 .MindMapContainer{
   margin-top:1em;
 }
 
 #THREEContainer{
-  /*max-height: 600px;*/
-  /*!*max-width:800px;*!*/
-  /*width:800px;*/
-  /*position: absolute;*/
   background: black;
 }
 

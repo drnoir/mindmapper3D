@@ -26,7 +26,6 @@ function MindMap() {
     }
 
     const save = (event) =>{
-        // let keywordStore = this.props.keywords;
         const str = journalText;
         //regEx to strip out html markup
         const strStrip = str.replace(/<\/?("[^"]*"|'[^']*'|[^>])*(>|$)/g, "");
@@ -34,10 +33,7 @@ function MindMap() {
         const res = strStrip.split(" ");
         // setState with array of words from journal entry
         setKeywords(res);
-        console.log(journalkeywords)
     };
-    const currentDate =  new Date().toLocaleString();
-
 
 //used for random positioning
     function getRandomArbitrary(min, max) {
@@ -48,13 +44,11 @@ function MindMap() {
     function Box(props) {
         const intPos = getRandomArbitrary(0,15);
         const word = props.word;
-        console.log(JSON.stringify('props'+props));
 
         const material = new THREE.LineBasicMaterial({
             color: 'deeppink'
         });
 
-        console.log('wordcount'+word);
         const font = new THREE.FontLoader().parse(Roboto);
 
         // configure font geometry
@@ -80,9 +74,6 @@ function MindMap() {
             particle.position.z = randZ;
 
 
-            // let spritey = makeTextSprite( " Test Gallery, ",
-            //     { fontsize: 12, borderColor: {r:255, g:0, b:0, a:1.0}, backgroundColor: {r:255, g:100, b:100, a:0.8} } );
-
             particle.position.normalize();
             particle.position.multiplyScalar( Math.random() * 20 + 250);
 
@@ -95,9 +86,6 @@ function MindMap() {
         }
         // lines
         let geometry = new THREE.BufferGeometry().setFromPoints( points );
-        // let textMap = new THREE.TextBufferGeometry("hello world", geometry, new THREE.TextBufferGeometry( { color: 0xffffff, opacity: 0.8 } ) );
-
-        // let textMap = new THREE.TextGeometry( "Hello World", { color: 0xffffff, opacity: 0.8 } );
         let line = new THREE.Line( geometry, new THREE.LineBasicMaterial( { color: 0xffffff, opacity: 0.8 } ) );
 
 
