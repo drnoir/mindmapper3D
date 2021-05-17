@@ -1,9 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import './App.css';
 import '@progress/kendo-theme-default/dist/all.css';
-import {AppBar, AppBarSection, AppBarSpacer, Avatar} from '@progress/kendo-react-layout';
+import {AppBar, AppBarSection, AppBarSpacer} from '@progress/kendo-react-layout';
 import {Icon} from '@progress/kendo-react-common';
 import {BrowserRouter as Router, Route, Link, Switch,} from 'react-router-dom'
 import About from "./components/About";

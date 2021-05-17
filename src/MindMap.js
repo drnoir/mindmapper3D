@@ -1,8 +1,8 @@
 import * as React from 'react';
 import {useState} from 'react';
 import {Editor, EditorTools} from "@progress/kendo-react-editor";
-import { Canvas, useUpdate, useThree, useResource  } from '@react-three/fiber'
-import { OrbitControls, Html } from '@react-three/drei'
+import { Canvas} from '@react-three/fiber'
+import { OrbitControls } from '@react-three/drei'
 import * as THREE from 'three'
 import Roboto from './assets/fonts/Roboto.json';
 import * as htmlToImage from 'html-to-image';

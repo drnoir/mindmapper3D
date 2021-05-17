@@ -19,7 +19,7 @@ class About extends React.Component {
                 <div className={"col"}>
                     <div className={"center-text"}>
                         <h1>About Us</h1>
-                        <p>We are a <a href="https://www.chrisgodber.co.uk" target="_blank">frontend developer</a> and
+                        <p>We are a <a href="https://www.chrisgodber.co.uk" target="_blank" rel={"noreferrer"}>frontend developer</a> and
                             UI / UX designer who have created this app for the WorthyWeb Hackathon.</p>
                         <p>Click on make a MindMap to add some notes on your current mental state, and view them in a 3D
                             visualisation.</p>
@@ -32,15 +32,15 @@ class About extends React.Component {
                     </div>
                     <div className={"container-about"}>
                         <div className={"about-item"}>
-                            <img src={writingimage}/>
+                            <img src={writingimage} alt={"Make your notes"}/>
                             <h2 className={"center-text"}>Make your notes</h2>
                         </div>
                         <div className={"about-item"}>
-                            <img src={wordsimage}/>
+                            <img src={wordsimage} alt={"View your 3D Mindmap"}/>
                             <h2 className={"center-text"}>View your 3D Mindmap</h2>
                         </div>
                         <div className={"about-item"}>
-                            <img src={photoimage}/>
+                            <img src={photoimage} alt={"Take snapshots"}/>
                             <h2 className={"center-text"}>Take snapshots</h2>
                         </div>
                     </div>
