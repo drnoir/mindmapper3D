@@ -146,6 +146,14 @@ h2{
   display: block; margin: 0 auto;
 }
 
+.app-banner-button a {
+ text-decoration: none;
+  color:white;
+}
+.app-banner-button a:hover {
+  text-decoration: underline;
+}
+
 .photo{
   background-color: #0D6560;
   width: 364.49px;

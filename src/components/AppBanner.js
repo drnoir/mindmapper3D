@@ -1,5 +1,5 @@
 import * as React from 'react';
-
+import {Link} from 'react-router-dom'
 function AppBanner(props) {
     return (
         <div className="app-banner"  style={{
@@ -14,7 +14,7 @@ function AppBanner(props) {
                         <div className='app-banner-column-right'>
                             <h1>{props.headline}</h1>
                             <h3>{props.subheading}</h3>
-                            <button className="app-banner-button">Get Started</button>
+                           <button className="app-banner-button"> <Link to="/MindMap">Get Started</Link></button>
                         </div>
                     </div>
                 </div>
