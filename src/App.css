@@ -1,38 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+  background: cadetblue;
+}
+h1{
+  font-family: 'Bebas Neue', cursive;
+  font-size:3em;
+}
+
+h2{
+  font-family: 'Bebas Neue', cursive;
+}
+
 .App {
+  /*text-align: center;*/
+}
+
+.loading {
+  position: absolute;
+  top:25%;
+  left:50%;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.app-header{
+  text-decoration: none;
+  list-style-type: none;
+  cursor: pointer;
+  color: black;
+}
+
+.app-banner{
+  position: absolute;
+  width: 100%;
+  height: 659px;
+  display:block;
+  background-size: cover;
+}
+
+
+.app-banner img{
+  /*height: auto;*/
+  width:100%;
+}
+
+.app-banner h1{
+  color:#0D6560;
+  font-size:48px;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-banner h3{
+  font-size:24px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.app-banner-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-banner-column {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.app-banner-column-left  {
+  height: 100%;
+}
+
+.app-banner-column-right {
+  height: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.app-banner-button {
+  background-color: #0D6560;
+  width: 364.49px;
+  height: 90.32px;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  color:white;
+  font-size:2em;
+  display: block; margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-block{
+  display: flex;
+  flex-direction: row;
+  width:100%;
 }
+
+ul {
+  font-size: 14px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+ul a{
+  font-size: 20px;
+  text-decoration: none;
+  list-style-type: none;
+  color:black;
+}
+
+ul a:hover{
+  cursor: pointer;
+  color: #84cef1;
+}
+
+li {
+  margin: 0 10px;
+}
+
+li:hover {
+  cursor: pointer;
+  color: #84cef1;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 10px;
+}
+
+.journal{
+  position: absolute;
+  margin:2em;
+  width:50%;
+}
+
+.cal{
+  margin:2em;
+}
+
+.wordcloud{
+  background:black;
+  border: solid white 4px;
+  margin:2em;
+}
+
+.MindMapContainer{
+  margin-top:1em;
+}
+
+.THREEContainer{
+  max-height: 600px;
+  /*max-width:800px;*/
+  width:800px;
+  position: absolute;
+  background: black;
+}
+
+
