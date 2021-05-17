@@ -30,7 +30,7 @@ function App() {
                     <AppBarSection>
                         <ul>
                             <li><Link to="/"> <Icon name='information' size="medium"/> About</Link></li>
-                            <li><Link to="/MindMap"> <Icon name='change-manually' size="medium"/> MindMap</Link></li>
+                            <li><Link to="/MindMap"> <Icon name='change-manually' size="medium"/> Make a MindMap</Link></li>
                         </ul>
                     </AppBarSection>
                 </AppBar>

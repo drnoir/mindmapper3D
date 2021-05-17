@@ -139,9 +139,9 @@ function MindMap() {
                                 [Undo, Redo],
                                 [Link, Unlink],
                                 [AlignLeft, AlignCenter, AlignRight],
-                                [OrderedList, UnorderedList, Indent, Outdent, EditorTools.ViewHtml]
+                                [OrderedList, UnorderedList, Indent, Outdent]
                             ]}
-                            contentStyle={{height: 360}}
+                            contentStyle={{height: 550}}
                             value={journalText}
                             onChange={textUpdate}
                         />
@@ -149,7 +149,7 @@ function MindMap() {
                 </div>
                 <div className='app-banner-column'>
                     <div className='app-banner-column-right'>
-                        <h2>3D Wordmap</h2>
+                        <h2>3D MindMap</h2>
                         <div id="THREEContainer">
                             <Canvas style={{height:600}} dpr={[1, 2]}  camera={{ fov: 25 }}  gl={{ preserveDrawingBuffer: true }} >
                                 <ambientLight intensity={0.5} />
@@ -164,7 +164,7 @@ function MindMap() {
                             </Canvas>
                         </div>
                     </div>
-                    <button className ="photo" onClick={takeImage}>Take Photo</button>
+                    <button className ="photo" onClick={takeImage}>Record Snapshot</button>
                 </div>
             </div>
         </div>

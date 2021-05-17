@@ -9,7 +9,7 @@ class About extends React.Component {
             <div>
                 <AppBanner bannerImage={aboutBanner}
                            headline={"Do you experience Challenges with your mental health?"}
-                           subheading={"Tell us what it is, find out what in means, view your mind in a 3D mindmap"}
+                           subheading={"View your thoughts in a 3D mindmap and record snapshots"}
                 />
             </div>
         )
