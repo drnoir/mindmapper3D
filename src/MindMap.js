@@ -1,11 +1,11 @@
 import * as React from 'react';
 import {useState} from 'react';
 import {Editor, EditorTools} from "@progress/kendo-react-editor";
-import {Button} from "@progress/kendo-react-buttons";
 import { Canvas, useUpdate, useThree, useResource  } from '@react-three/fiber'
 import { OrbitControls, Html } from '@react-three/drei'
 import * as THREE from 'three'
 import Roboto from './assets/fonts/Roboto.json';
+import * as htmlToImage from 'html-to-image';
 
 const {
     Bold, Italic, Underline,
@@ -36,16 +36,6 @@ function MindMap() {
         setKeywords(res);
         console.log(journalkeywords)
     };
-
-    // const saveJournal = (event) =>{
-    //     event.preventDefault();
-    //     // strip markup from journal entry
-    //     const journalStrip = journalText.replace(/<\/?("[^"]*"|'[^']*'|[^>])*(>|$)/g, "");
-    //     const journalTime =  Date.now();
-    //     setEntry(journalStrip);
-    //
-    // };
-
     const currentDate =  new Date().toLocaleString();
 
 
@@ -59,6 +49,7 @@ function MindMap() {
         const intPos = getRandomArbitrary(0,15);
         const word = props.word;
         console.log(JSON.stringify('props'+props));
+
         const material = new THREE.LineBasicMaterial({
             color: 'deeppink'
         });
@@ -122,6 +113,17 @@ function MindMap() {
         )
     }
 
+    // take a picture of canvas
+    function takeImage(elementId) {
+        htmlToImage.toJpeg(document.getElementById('THREEContainer'), { quality: 100 })
+            .then(function (dataUrl) {
+                var link = document.createElement('a');
+                link.download = 'my-image-name.jpeg';
+                link.href = dataUrl;
+                link.click();
+            });
+    }
+
     return(
         <div className={"MindMapContainer"}>
 
@@ -148,8 +150,8 @@ function MindMap() {
                 <div className='app-banner-column'>
                     <div className='app-banner-column-right'>
                         <h2>3D Wordmap</h2>
-                        <div className="THREEContainer">
-                            <Canvas style={{height:600}} dpr={[1, 2]}  camera={{ fov: 25 }} >
+                        <div id="THREEContainer">
+                            <Canvas style={{height:600}} dpr={[1, 2]}  camera={{ fov: 25 }}  gl={{ preserveDrawingBuffer: true }} >
                                 <ambientLight intensity={0.5} />
                                 <pointLight position={[10, 10, 5]} />
                                 <pointLight position={[-10, -10, -10]} />
@@ -162,6 +164,7 @@ function MindMap() {
                             </Canvas>
                         </div>
                     </div>
+                    <button className ="photo" onClick={takeImage}>Take Photo</button>
                 </div>
             </div>
         </div>
