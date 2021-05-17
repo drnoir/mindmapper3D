@@ -126,9 +126,7 @@ function MindMap() {
 
     return(
         <div className={"MindMapContainer"}>
-
             <div className='app-banner-row'>
-
                 <div className='app-banner-column'>
                     <div className='app-banner-column-left'>
                         <h2>Enter your thoughts here</h2>

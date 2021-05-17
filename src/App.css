@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body{
-  background: cadetblue;
+  background: #f2f2f2;
 }
 h1{
   font-family: 'Bebas Neue', cursive;
   font-size:3em;
+  color:#0D6560;
 }
 
 h2{
   font-family: 'Bebas Neue', cursive;
+  color:#0D6560;
 }
 
 .App {
@@ -39,8 +41,49 @@ h2{
   color: black;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.col {
+  height:auto;
+  margin-bottom: 10px;
+  width:100%;
+}
+
+.container-about {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about-item {
+  flex-grow: 1;
+}
+
+.about-item img {
+  border-radius: 20px;
+  border: #0D6560 solid 5px;
+  margin:2em;
+  width:85%;
+}
+
+
+.col-header {
+  height: 659px;
+  margin-bottom: 10px;
+  width:100%;
+}
+
+.center-text{
+  text-align: center;
+}
+
+
 .app-banner{
-  position: absolute;
   width: 100%;
   height: 659px;
   display:block;
@@ -161,6 +204,7 @@ li:hover {
 .journal{
   position: absolute;
   width:90%;
+  border: #0D6560 solid 2px;
 }
 
 .cal{
