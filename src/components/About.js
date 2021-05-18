@@ -20,7 +20,7 @@ class About extends React.Component {
                     <div className={"center-text"}>
                         <h1>About Us</h1>
                         <p>We are a <a href="https://www.chrisgodber.co.uk" target="_blank" rel={"noreferrer"}>frontend developer</a> and
-                            UI / UX designer who have created this app for the WorthyWeb Hackathon.</p>
+                            <a href ="https://twitter.com/centurioncent1" target="_blank" rel={"noreferrer"}>UI / UX designer</a> who have created this app for the WorthyWeb Hackathon.</p>
                         <p>Click on make a MindMap to add some notes on your current mental state, and view them in a 3D
                             visualisation.</p>
                         <p>Take snapshots of your 3D MindMap for future reference</p>
